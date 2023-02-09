@@ -78,7 +78,7 @@ int main() {
             }
         }
         for (int i = 0; i < head; ++i) {
-            printf("%d %s %lf\n", processes[i].pid, processes[i].name, processes[i].mem_usage);
+            printf("%6d %40s %6.3lf\n", processes[i].pid, processes[i].name, processes[i].mem_usage);
             free(processes[i].name);
         }
         Sleep(1000);
